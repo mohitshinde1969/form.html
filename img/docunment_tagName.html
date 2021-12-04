@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document_TagName</title>
+    
+</head>
+<body>
+
+    <div id="div1">
+        <h1 id="myh1">h1 from div 1 </h1>
+    </div>
+    <div id="div2">
+        <h1 id="myh2">h1 from div 2 </h1>
+    </div>
+    <div id="div3">
+        <h1 id="myh3">h1 from div 3 </h1>
+    </div>
+    <button onclick="get()">GetElements</button>
+    <script>
+        function get(){
+            let divs=document.getElementsByTagName("div");
+
+            for(let i=0;i<divs.length;i++)
+            {
+                alert(divs[i].id);
+            }
+        }
+    </script>
+</body>
+</html>
